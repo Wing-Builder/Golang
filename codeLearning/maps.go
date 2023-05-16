@@ -28,29 +28,28 @@ func main() {
 
 	daysInAYear := 0
 
-	daysInAMonth := map [string]int{
-		"Janvier": 31,
-		"Février": 28,
-		"Mars": 31,
-		"Avril": 30, 
-		"Mai": 31, 
-		"Juin": 30,
-		"Juillet": 31, 
-		"Août": 31,
+	daysInAMonth := map[string]int{
+		"Janvier":   31,
+		"Février":   28,
+		"Mars":      31,
+		"Avril":     30,
+		"Mai":       31,
+		"Juin":      30,
+		"Juillet":   31,
+		"Août":      31,
 		"Septembre": 30,
-		"Octobre": 31,
-		"Novembre": 30,
-		"Décembre": 31,
+		"Octobre":   31,
+		"Novembre":  30,
+		"Décembre":  31,
 	}
 
-	for _, value := range daysInAMonth{
-	 	daysInAYear = daysInAYear + value
+	for _, value := range daysInAMonth {
+		daysInAYear = daysInAYear + value
 	}
 
 	fmt.Printf("Nombre de jours dans une année: %d jours!\n", daysInAYear)
 
-	for key, value := range daysInAMonth{
+	for key, value := range daysInAMonth {
 		fmt.Printf("Le mois de %v possède %d jours!\n", key, value)
 	}
 }
-
